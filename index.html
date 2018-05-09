@@ -1,55 +1,110 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<title>Bootstrap Project</title>
-	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
-</head>
-<body>
-	<header>
-		<nav class="navbar navbar-default">
-		  <div class="container-fluid">
-		    <!-- Brand and toggle get grouped for better mobile display -->
-		    
-		    <!-- Collect the nav links, forms, and other content for toggling -->
-		    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-		    		   
-		      <ul class="nav navbar-nav navbar-right">
-		        <li><a href="#">Index</a></li>
-		        <li><a href="#">About</a></li>
-		        <li><a href="#">Service</a></li>
-		        <li><a href="#">Study</a></li>
-		        <li><a href="#">Certification</a></li>
-		        <li><a href="#">Advertisement</a></li>
-		      </ul>
-		    </div><!-- /.navbar-collapse -->
-		  </div><!-- /.container-fluid -->
-		</nav>
-	</header>
-	<section id="index">
-		<p>Index</p>
-	</section>
-	<section id="about">
-		<p>About</p>
-	</section>
-	<section id="service">
-		<p>Our services</p>
-		<section>
-			<p>Let's Study Together</p>
-		</section>
-	</section>
-	<section id="study">
-		<p>Study</p>
-	</section>
-	<section id="certificate">
-		<p>Certificate</p>
-		<section>
-			<p>Icons</p>
-		</section>
-	</section>
-	<section>
-		<p>10000+ Happy Clents</p>
-	</section>
-	<footer>Footer: Contact us</footer>
 
+<head>
+    <!-- 指定编码格式，写在titile前面 -->
+    <meta charset="utf-8">
+    <!-- 设置IE使用最新版本 渲染-->
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Bootstrap Project</title>
+    <meta name="description" content="">
+    <!-- viewpoint指定移动端不对网页进行缩放 -->
+    <meta name="viewpoint" content="width=device-width, initial-scale=1">
+    <!-- HTML5的离线存储 -->
+    <link rel="manifest" href="site.webmanifest">
+    <!-- 苹果safari浏览器上可以使用添加到主屏按钮将网站添加到主屏幕上，方便用户以后访问 -->
+    <link rel="apple-touch-icon" href="icon.png">
+    <!-- Place favicon.ico in the root directory -->
+    <!-- 确保所有浏览器都可以使用 HTML 5 元素 -->
+    <link rel="stylesheet" href="css/normalize.css">
+    <!-- bootstrap样式 -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- 文字动画样式 -->
+    <link rel="stylesheet" href="css/animate.min.css">
+    <!-- 图标 -->
+    <link rel="stylesheet" href="css/font-awesome-4.7.0/css/font-awesome.min.css">
+    <!-- 项目样式 -->
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+    <!-- 对于使用低于IE9版本的用户，给出升级提示，当然，我们可以选择删除这一段或者换成一个中文提示 -->
+    <!--[if lte IE 9]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+        <![endif]-->
+    <!-- Add your site or application content here -->
+    <header class="navbar-fixed-top">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                	<div class="logo">
+						<a href="http://www.baidu.com">	
+							<img src="img/logo.png" alt="">
+						</a>
+					</div>
+					<div class="site-title">
+						<a href="http://www.baidu.com">万和</a>
+					</div>
+					<div class="site-slogan">
+						做最用心的教育机构<a href="http://www.baidu.com">WanHo</a>
+					</div>	
+                </div>
+                <div class="col-md-8">
+                    <nav class="navbar navbar-default">
+                        <div class="container-fluid">
+                            <!-- Brand and toggle get grouped for better mobile display -->
+                            <div class="navbar-header">
+                                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                                    <span class="sr-only">Toggle navigation</span>
+                                    <span class="icon-bar"></span>
+                                    <span class="icon-bar"></span>
+                                    <span class="icon-bar"></span>
+                                </button>
+                            </div>
+                            <!-- Collect the nav links, forms, and other content for toggling -->
+                            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                                <ul class="nav navbar-nav navbar-right">
+                                    <li class="active"><a href="#" >首页</a></li>
+                                    <li><a href="#">关于</a></li>
+                                    <li><a href="#">服务</a></li>
+                                    <li><a href="#">图集</a></li>
+                                    <li><a href="#">认证</a></li>
+                                    <li><a href="#">联系我们</a></li>
+                                </ul>
+                            </div>
+                            <!-- /.navbar-collapse -->
+                        </div>
+                        <!-- /.container-fluid -->
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section id="index">
+        <p>Index</p>
+    </section>
+    <section id="about">
+        <p>About</p>
+    </section>
+    <section id="service">
+        <p>Our services</p>
+        <section>
+            <p>Let's Study Together</p>
+        </section>
+    </section>
+    <section id="study">
+        <p>Study</p>
+    </section>
+    <section id="certificate">
+        <p>Certificate</p>
+        <section>
+            <p>Icons</p>
+        </section>
+    </section>
+    <section>
+        <p>10000+ Happy Clents</p>
+    </section>
+    <footer>Footer: Contact us</footer>
 </body>
+
 </html>
