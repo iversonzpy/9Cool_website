@@ -131,6 +131,10 @@ img{
     height: auto;
 }
 
+.space{
+    padding: 10px;
+}
+
 /* ==========================================================================
    全局样式结束
    ========================================================================== */
@@ -140,16 +144,18 @@ img{
 header{
     color: #fff;
     background-color: rgba(0, 0, 0, 0.5);
-    padding: 10px 0;
+    padding: 10px 0;  
 }
 
 .logo{
     float: left;
     margin: 10px 10px 10px 0;
+    transition: all 0.6s;
 }
 
 .site-title{
     font-size: 36px;
+    transition: all 1s;
 }
 .site-title a{
     color: #fff;
@@ -171,30 +177,84 @@ header .col-md-8{
 
 .navbar-default .navbar-nav>li>a {
     color: #fff;
-}
-
-.navbar-default .navbar-nav>li>a {
-    color: #fff;
     font-size: 18px;
 }
-
-.navbar-default .navbar-nav>li.active>a{
+.navbar-default .navbar-nav>li.active>a,
+.navbar-default .navbar-nav>li.active>a:hover, 
+.navbar-default .navbar-nav>li>a:hover{
     color: #55ACEE;
     background-color: transparent;
 }
 
-.navbar-default .navbar-nav>li>a:hover
-.navbar-default .navbar-nav>li.active>a:hover {
-    color: #55ACEE;
-    background-color: transparent;
+.fixed-header-on header{
+    height: 80px;
+    background-color: rgba(0, 0, 0, 0.95);
 }
+.fixed-header-on .logo{
+    transform: scale(0.8); 
+    margin-top: 0;
+    margin-bottom: 0;
+}
+.fixed-header-on .site-title{
+    margin-top: 5px;
+    font-size: 24px;
+}
+
+.fixed-header-on .col-md-8{
+    margin-top: 5px;
+}
+
 /* ==========================================================================
    头部样式结束
    ========================================================================== */
 
+/* ==========================================================================
+   Index样式开始
+   ========================================================================== */
+.index {
+    height: 100%;
+    color: #fff;
+}
+
+.index a{
+    font-size: 40px;
+    font-weight: 800;
+    color: #55ACEE;
+}
+
+.index p{
+    font-size : 20px;
+}
 
 
+.index::after{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    content: '';
+    background-color: rgba(0,0,0,0.5);    
+}
 
+.index .caption{
+    z-index: 1;
+    position: absolute;
+    padding-top: 260px;
+    width: 100%;
+}
+
+
+/* ==========================================================================
+   Index样式结束
+   ========================================================================== */
+
+
+.filter-nav li{
+    float: none;
+    display: inline-block;
+    padding: 0 4px;
+}
 
 
 
