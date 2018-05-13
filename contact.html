@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="zh-cmn-Hans">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="">
+<meta name="author" content="webthemez">
+<title>九酷甜品</title>
+
+<!-- Bootstrap core CSS -->
+<link href="css/bootstrap.css" rel="stylesheet">
+<!-- Custom CSS -->
+<link href="css/styles.css" rel="stylesheet">
+<link href="css/font-awesome.css" rel="stylesheet">
+
+<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries --> 
+<!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+<link rel="icon" href="logo.ico">
+</head>
+<body>
+
+    <jsp:include page="navbar.jsp" />
+
+
+    <div id="contact" name="contact">
+        <div class="container">
+            <div class="row centered">
+                <h2>招商加盟</h2>
+                <p>九酷甜品是什么样的公司。我们诚邀有志于餐饮投资创业人士加盟。</p>
+                <hr>
+            </div>
+            <div class="row">
+                <div class="col-md-3"></div>
+                <div class="col-md-6">
+                    <strong>加盟条件</strong>
+                    <p></p>
+                    <ul style="text-align: left">
+                        <li>具有丰富的经营管理经验，特别是餐饮从业经验</li>
+                        <li>对品牌有所了解，认同企业文化及经营理念，致力与团队共同发展品牌</li>
+                        <li>具进取精神，对店铺的经营管理能全身心投入，愿意接受总部的系统管理和持续培训</li>
+                        <li>具有良好的信用记录及资金实力</li>
+                        <li>对加盟投资有风险意识</li>
+                        <li>具备良好的沟通能力</li>
+                    </ul>
+                </div>
+                <div class="col-md-3"></div>
+                <div class="col-md-7">
+                    <form id="contact" action="http://192.168.3.104:8080/message/add" method="post" class="form" role="form">
+                        <div class="row">
+                            <div class="col-md-12 form-group">
+                                <input class="form-control" id="name" name="name" placeholder="姓名" type="text" required />
+                            </div>
+                            <div class="col-md-12 form-group">
+                                <input class="form-control" id="phone" name="phone" placeholder="手机" type="number" />
+                            </div>
+                            <div class="col-md-12 form-group">
+                                <input class="form-control" id="email" name="email" placeholder="邮箱地址" type="email" required />
+                            </div>
+                            <div class="col-md-12 form-group">
+                                <input class="form-control" id="address" name="address" placeholder="加盟地址" type="text" />
+                            </div>
+                            <div class="col-md-12 form-group">
+                                <textarea class="form-control" id="message" name="message" placeholder="留言" rows="5"></textarea>
+                                <button id="submit-message" class="btn btn-lg pull-left" type="submit">我要加盟</button>
+                            </div>
+                        </div>
+                    </form>
+                    <!-- form -->
+                </div>
+                <div class="col-md-5" style="margin-top:30px">
+                    <i class="fa fa-map-marker fa-2x"></i>
+                    <strong>九酷甜品</strong>
+                    <p>南开区 xx街道
+                        <br> 天津, 中国</p>
+                    <br/>
+                    <i class="fa fa-envelope-o fa-2x"></i>
+                    <p>xxx@gmail.com</p>
+                    <br/>
+                    <i class="fa fa-phone fa-2x"></i>
+                    <p> 133xxxxxxxx</p>
+                </div>
+            </div>
+            <!-- row -->
+        </div>
+    </div>
+
+
+
+<!-- Bootstrap core JavaScript
+    ==================================================  
+Placed at the end of the document so the pages load faster -->
+
+
+<script type="text/javascript" src="js/jquery.min.js"></script> 
+<script type="text/javascript" src="js/bootstrap.min.js"></script> 
+
+<!-- <script type="text/javascript" src="js/jquery.js"></script>  -->
+<script type="text/javascript" src="js/jquery.easing.1.3.js"></script> 
+<!-- <script type="text/javascript" src="js/jquery.nav.js"></script> -->
+
+  </body>
+</html>
