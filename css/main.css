@@ -300,14 +300,14 @@ img {
 header {
     color: #000;
     background-color: #fff;
-    padding: 20px 0;
-    height: 80px;
+    padding: 20px 0 0 0;
     transition: all 1s;
 }
 
 .logo {
     float: left;
-    margin: 5px 10px 10px 0;
+    margin-top: 8px;
+    margin-left: 15px;
 }
 
 .logo a {
@@ -331,7 +331,7 @@ header {
 }
 
 header .col-md-8 {
-    margin-top: 15px;
+    margin-top: 20px;
 }
 
 .navbar-default {
@@ -343,6 +343,8 @@ header .col-md-8 {
     color: #000;
     font-size: 18px;
     font-weight: 700;
+    margin-top: 20px;
+    padding: 5px 8px;
 }
 
 .navbar-default .navbar-nav>li.active>a:hover, .navbar-default .navbar-nav>li>a:hover {
@@ -357,14 +359,18 @@ header .col-md-8 {
     background-color: transparent;
 }
 
+.navbar-default .navbar-toggle {
+    position: absolute;
+    right: 15px;
+}
+
 .fixed-header-on header {
-    height: 70px;
-    padding: 5px 0;
+    padding: 0;
 }
 
 .fixed-header-on .logo {
     transform: scale(0.8);
-    margin: 0;
+    margin-top: 8px;    
 }
 
 .fixed-header-on .site-name {
@@ -379,13 +385,22 @@ header .col-md-8 {
     margin-top: 5px;
 }
 
+.fixed-header-on .navbar-nav>li>a{
+    margin-top: 20px;
+}
+
+.navbar-toggle{
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
 /* 头部样式结束 =================================================================*/
 
 /* 首页样式开始 =================================================================*/
 
 .index {
     height: 100%;
-    top:95px;
+    top:80px;
     position: relative;
 }
 
@@ -673,14 +688,13 @@ blockquote footer {
 /* 联系我们开始 =================================================================*/
 .contact{
     position: relative;
-    padding-top: 20px;
+    padding-top: 40px;
     padding-bottom: 10px;
 }
 
 .contact p{
     font-size: 18px;
 }
-
 
 .contact .addin {
     font-size: 16px;
@@ -730,6 +744,11 @@ blockquote footer {
 
 .contact .address ul li:hover {
     color: orange;
+}
+
+.contact .col-md-6{
+    padding-left: 30px;
+    padding-right: 30px;
 }
 
 

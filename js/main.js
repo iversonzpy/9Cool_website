@@ -62,3 +62,10 @@ $(this).parent().addClass('active').siblings().removeClass('active');
 });
 
 //图集 的结束====================================================
+
+//小屏幕招商加盟自动收缩 的开始====================================
+$('#mynavbar a').click(function(){  
+  $('#mynavbar').removeClass('navbar-collapse collapse in').addClass('navbar-collapse collapse');
+});
+
+//小屏幕招商加盟自动收缩 的开始====================================
